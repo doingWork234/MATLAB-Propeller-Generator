@@ -1,5 +1,5 @@
 # MATLAB-Propeller-Generator
-Automated MATLAB based propeller generator using OpenProp, producing watertight hub and blade geometry that is ready for CFD meshing and analysis. Tested in Ansys. 
+Automated MATLAB based propeller generator using OpenProp, producing blade geometry that can be viewed in Ansys SpaceClaim or SolidWorks.  Can be used for meshing for further CFD analysis however requires repairing of microscoping gaps due to rounding errors in MATLAB.
 
 
 This script generates a surface mesh of the propeller, it does not generate a volumetric mesh which is needed for CFD analysis. However, volumetric meshing can be easily done through software such as Ansys Spaceclaim.
@@ -24,5 +24,4 @@ It also serves as a means to make a quick and easy draft and meshing rather than
 4. Open MATLAB and set the source to the folder containing the .m files and OpenProp SourceCode
 5. Set the input parameters in openProp_inputs.m before running STL_PropGenerator.m
 6. Upon running the main script file (STL_PropGenerator), the design windows from OpenProp are displayed, these can be closed and the STL file will be present in the folder with rest of the files
-7. The STL file can be loaded into SolidWorks, this displays a warning which can be safely ignored
-8.  
+7. The STL file can be loaded into SolidWorks, this displays a warning which can be safely igno

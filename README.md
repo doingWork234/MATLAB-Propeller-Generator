@@ -15,3 +15,10 @@ This script generates a surface mesh of the propeller, it does not generate a vo
 ## Files included
 - Input example file for an EDF type propeller generation
 - Main Script file that utilises the input and the OpenProp SourceCode file
+
+## Steps to Run
+1. Download the .m files from this repository
+2. Download the OpenProp files from https://www.epps.com/openprop and extract the files
+3. Find the SourceCode folder and place it within the same folder as the .m files from this repo
+4. Open MATLAB and set the source to the folder containing the .m files and OpenProp SourceCode
+5. 

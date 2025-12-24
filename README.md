@@ -3,6 +3,7 @@ Automated MATLAB based propeller generator using OpenProp, producing watertight 
 
 
 This script generates a surface mesh of the propeller, it does not generate a volumetric mesh which is needed for CFD analysis. However, volumetric meshing can be easily done through software such as Ansys Spaceclaim.
+It also serves as a means to make a quick and easy draft and meshing rather than a full functioning CAD based model.
 
 
 

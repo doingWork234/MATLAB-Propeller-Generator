@@ -1,6 +1,6 @@
 # MATLAB-Propeller-Generator
 
-I made this script since I could not find a way for a quick and easy way to prototype various designs of propellers for a fixed wing UAV project I am doing, with this script, I am able to view it in SolidWorks or Ansys SpaceClaim to further refine my design. 
+I created this script to solve a challenge in my fixed wing UAV project. There was no quick and easy method to prototype and iterate various propeller designs. Therefore using OpenProp's geometry library, I can now produce various designs of propellers and import into applications such as SolidWorks for rapid prototyping. Although the script outputs a patchy surface mesh rather than a fully functional CAD model, it still offers a workflow that allows me to test various designs for my UAV.
 
 Automated MATLAB based propeller prototype generator using OpenProp, producing blade geometry that can be viewed in Ansys SpaceClaim or SolidWorks.  Can be used for meshing for further CFD analysis however requires repairing of the surface patches. These occur due to high curvature of triangles which surf2patch struggles to join.
 
@@ -37,6 +37,8 @@ It also serves as a means to make a quick and easy draft and meshing rather than
 5. Set the input parameters in openProp_inputs.m before running STL_PropGenerator.m
 6. Upon running the main script file (STL_PropGenerator), the design windows from OpenProp are displayed, these can be closed and the STL file will be present in the folder with rest of the files
 7. The STL file can be loaded into SolidWorks or SpaceClaim directly.
+
+8. Or for a quick viewing of the sample made, click on the STL file in this github repo and you can scroll around and view the geometry on your browser
 
 ## Example EDF prop created:
 <img width="853" height="698" alt="image" src="https://github.com/user-attachments/assets/4bbe4450-9688-4afd-88a9-68a3ab37bee0" />

@@ -2,7 +2,7 @@
 
 I made this script since I could not find a way for a quick and easy way to prototype various designs of propellers for a fixed wing UAV project I am doing, with this script, I am able to view it in SolidWorks or Ansys SpaceClaim to further refine my design. 
 
-Automated MATLAB based propeller prototype generator using OpenProp, producing blade geometry that can be viewed in Ansys SpaceClaim or SolidWorks.  Can be used for meshing for further CFD analysis however requires repairing of the surface. These occur due to small continuity gaps caused MATLAB precision.
+Automated MATLAB based propeller prototype generator using OpenProp, producing blade geometry that can be viewed in Ansys SpaceClaim or SolidWorks.  Can be used for meshing for further CFD analysis however requires repairing of the surface. These occur due to high curvature of triangles which surf2patch struggles to join.
 
 This script generates a surface mesh of the propeller, it does not generate a volumetric mesh which is needed for CFD analysis. However, volumetric meshing can be done through spaceclaim once the "holes" are fixed through software such as Ansys Spaceclaim (warning: may be time consuming depending on the model).
 It also serves as a means to make a quick and easy draft and meshing rather than a full functioning CAD based model.
@@ -20,7 +20,7 @@ It also serves as a means to make a quick and easy draft and meshing rather than
 
 ## Limitations
 - OpenProp only utilises 6-series NACA aerofoils since they favor laminar flow regions and low drag. Hence, the foils can not be changed much. However, the shape and design can be modified through the thickness distribution variable: t0oc0 and defining the blade twist distribution using VARING
-
+- OpenProp also defines each blade's leading edge starting point at the same uniform location, this causes overlap and not very manufacture-able geometry
 
 ## Files included
 - Input example file for an EDF type propeller generation
@@ -41,4 +41,5 @@ It also serves as a means to make a quick and easy draft and meshing rather than
 7. The STL file can be loaded into SolidWorks or SpaceClaim directly.
 
 ## Example EDF prop created:
-<img width="992" height="696" alt="image" src="https://github.com/user-attachments/assets/a9f4c39f-abdf-4cf0-b727-29f90046b489" />
+<img width="853" height="698" alt="image" src="https://github.com/user-attachments/assets/4bbe4450-9688-4afd-88a9-68a3ab37bee0" />
+

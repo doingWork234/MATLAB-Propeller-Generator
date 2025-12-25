@@ -21,6 +21,7 @@ It also serves as a means to make a quick and easy draft and meshing rather than
 - OpenProp only utilises 6-series NACA aerofoils since they favor laminar flow regions and low drag. Hence, the foils can not be changed much. However, the shape and design can be modified through the thickness distribution variable: t0oc0 and defining the blade twist distribution using VARING
 - OpenProp also defines each blade's leading edge starting point at the same uniform location, this causes overlap and not very manufacture-able geometry
 - Surfaces are not fully joined due to high curvature of triangles, surf2patch issue hence SolidWorks does not view this as a complete solid
+- Due to the concave shape at the trailing surface of the blade has missing faces due to the curvature of triangles (surf2patch)
 - The use of mathematical assembly (by joining lists of vertices and faces) causes the parts to touch but not be a complete assembly, hence these are all individual parts that remain close
 
 ## Files included

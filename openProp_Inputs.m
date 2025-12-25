@@ -7,7 +7,7 @@ notes = "Initial propeller design for IGES file";
 
 %Prop mesh resolution ---> greater number = greater file size but more
 %resolution
-Mp = 50;
+Mp = 20;
 Np = 20;
 
 %prop definitions  
@@ -166,3 +166,4 @@ pt.states   = [];       % (struct) off-design state analysis
 
 % --------------------------------------------------------- Save input data
 save OPinput pt input
+

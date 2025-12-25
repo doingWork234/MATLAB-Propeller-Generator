@@ -16,9 +16,17 @@ It also serves as a means to make a quick and easy draft and meshing rather than
 - Watertight surface generation
 - Solid body export
 
+## Limitations
+- OpenProp only utilises 6-series NACA aerofoils since they favor laminar flow regions and low drag. Hence, the foils can not be changed much. However, the shape and design can be modified through the thickness distribution variable: t0oc0 and defining the blade twist distribution using VARING
+
+
 ## Files included
 - Input example file for an EDF type propeller generation
 - Main Script file that utilises the input and the OpenProp SourceCode file
+
+
+
+
 
 ## Steps to Use
 1. Download the .m files from this repository

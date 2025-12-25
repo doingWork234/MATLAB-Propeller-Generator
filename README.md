@@ -12,9 +12,9 @@ It also serves as a means to make a quick and easy draft and meshing rather than
 4. Exports to a STL file that can be imported as a graphic into SolidWorks for further CAD or CFD applications such as Ansys Spaceclaim for hole patching and CFD analysis
 
 ## In progress
-- IGES or STEP export for futher CAD improvements, 3D printing and easy CFD analysis
-
-
+- IGES or STEP export for futher CAD improvements and 3D printing
+- Watertight surface generation
+- Solid body export
 
 ## Files included
 - Input example file for an EDF type propeller generation

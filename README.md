@@ -1,4 +1,7 @@
 # MATLAB-Propeller-Generator
+
+I made this script since I could not find a way for a quick and easy way to prototype various designs of propellers for a fixed wing UAV project I am doing, with this script, I am able to view it in SolidWorks or Ansys SpaceClaim to further refine my design. 
+
 Automated MATLAB based propeller prototype generator using OpenProp, producing blade geometry that can be viewed in Ansys SpaceClaim or SolidWorks.  Can be used for meshing for further CFD analysis however requires repairing of the surface. These occur due to small continuity gaps caused MATLAB precision.
 
 This script generates a surface mesh of the propeller, it does not generate a volumetric mesh which is needed for CFD analysis. However, volumetric meshing can be done through spaceclaim once the "holes" are fixed through software such as Ansys Spaceclaim.

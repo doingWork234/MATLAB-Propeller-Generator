@@ -25,6 +25,7 @@ It also serves as a means to make a quick and easy draft and meshing rather than
 ## Files included
 - Input example file for an EDF type propeller generation
 - Main Script file that utilises the input and the OpenProp SourceCode file
+- An EDF style propeller based on the inputs defined in the respective file
 
 
 
@@ -38,3 +39,6 @@ It also serves as a means to make a quick and easy draft and meshing rather than
 5. Set the input parameters in openProp_inputs.m before running STL_PropGenerator.m
 6. Upon running the main script file (STL_PropGenerator), the design windows from OpenProp are displayed, these can be closed and the STL file will be present in the folder with rest of the files
 7. The STL file can be loaded into SolidWorks or SpaceClaim directly.
+
+## Example EDF prop created:
+<img width="992" height="696" alt="image" src="https://github.com/user-attachments/assets/a9f4c39f-abdf-4cf0-b727-29f90046b489" />

@@ -2,34 +2,31 @@
 
 I made this script since I could not find a way for a quick and easy way to prototype various designs of propellers for a fixed wing UAV project I am doing, with this script, I am able to view it in SolidWorks or Ansys SpaceClaim to further refine my design. 
 
-Automated MATLAB based propeller prototype generator using OpenProp, producing blade geometry that can be viewed in Ansys SpaceClaim or SolidWorks.  Can be used for meshing for further CFD analysis however requires repairing of the surface. These occur due to high curvature of triangles which surf2patch struggles to join.
+Automated MATLAB based propeller prototype generator using OpenProp, producing blade geometry that can be viewed in Ansys SpaceClaim or SolidWorks.  Can be used for meshing for further CFD analysis however requires repairing of the surface patches. These occur due to high curvature of triangles which surf2patch struggles to join.
 
-This script generates a surface mesh of the propeller, it does not generate a volumetric mesh which is needed for CFD analysis. However, volumetric meshing can be done through spaceclaim once the "holes" are fixed through software such as Ansys Spaceclaim (warning: may be time consuming depending on the model).
+This script generates a surface mesh of the propeller, it does not generate a volumetric mesh which is needed for CFD analysis. However, volumetric meshing can be done through spaceclaim once the "surface patches" are fixed through software such as Ansys Spaceclaim (warning: may be time consuming depending on the model).
 It also serves as a means to make a quick and easy draft and meshing rather than a full functioning CAD based model.
 
 ## Features
 1. Automatic propeller geometry generation from input
 2. Blade and Hub surface generation
-3. Includes nacelle generation that uses a tangent ogive curve based approximation (1.5 exponential)
-4. Exports to a STL file that can be imported as a graphic into SolidWorks for further CAD or CFD applications such as Ansys Spaceclaim for hole patching and CFD analysis
+3. Includes nacelle generation that uses a tangent ogive curve based approximation (1.5 exponential, power law)
+4. Exports to a STL file that can be imported as a graphic into SolidWorks for further CAD or CFD applications such as Ansys Spaceclaim for surface  patching and CFD analysis
 
 ## In progress
-- IGES or STEP export for futher CAD improvements and 3D printing
+- Solid body export -> using either an export to IGES or SolidWorks api to loft the 2d curves.
 - Watertight surface generation
-- Solid body export
 
 ## Limitations
 - OpenProp only utilises 6-series NACA aerofoils since they favor laminar flow regions and low drag. Hence, the foils can not be changed much. However, the shape and design can be modified through the thickness distribution variable: t0oc0 and defining the blade twist distribution using VARING
 - OpenProp also defines each blade's leading edge starting point at the same uniform location, this causes overlap and not very manufacture-able geometry
+- Surfaces are not fully joined due to high curvature of triangles, surf2patch issue hence SolidWorks does not view this as a complete solid
+- The use of mathematical assembly (by joining lists of vertices and faces) causes the parts to touch but not be a complete assembly, hence these are all individual parts that remain close
 
 ## Files included
 - Input example file for an EDF type propeller generation
 - Main Script file that utilises the input and the OpenProp SourceCode file
 - An EDF style propeller based on the inputs defined in the respective file
-
-
-
-
 
 ## Steps to Use
 1. Download the .m files from this repository

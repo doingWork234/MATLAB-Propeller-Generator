@@ -4,7 +4,7 @@ I made this script since I could not find a way for a quick and easy way to prot
 
 Automated MATLAB based propeller prototype generator using OpenProp, producing blade geometry that can be viewed in Ansys SpaceClaim or SolidWorks.  Can be used for meshing for further CFD analysis however requires repairing of the surface. These occur due to small continuity gaps caused MATLAB precision.
 
-This script generates a surface mesh of the propeller, it does not generate a volumetric mesh which is needed for CFD analysis. However, volumetric meshing can be done through spaceclaim once the "holes" are fixed through software such as Ansys Spaceclaim.
+This script generates a surface mesh of the propeller, it does not generate a volumetric mesh which is needed for CFD analysis. However, volumetric meshing can be done through spaceclaim once the "holes" are fixed through software such as Ansys Spaceclaim (warning: may be time consuming depending on the model).
 It also serves as a means to make a quick and easy draft and meshing rather than a full functioning CAD based model.
 
 ## Features
